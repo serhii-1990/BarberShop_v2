@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product card</title>
+
+    <link rel="stylesheet" href="css/productCard.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__wrapper">
+            <nav class="site-navigation">
+                <a><img src="img/logo.svg" width="111" height="24" alt="Logotype barber shop" /></a>
+                <ul class="site-navigation__list">
+                    <li><a href>Information</a></li>
+                    <li><a href>News</a></li>
+                    <li><a href>Prise-list</a></li>
+                    <li><a href class="site-navigation__current">Shop</a></li>
+                    <li><a href>Contacts</a></li>
+                </ul>
+                <ul class="site-navigation__login-list">
+                    <li>
+                        <a href="/">Log-in<img src="img/loginIcon.svg" alt="" class="login-icon"/></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1 class="product-header">Set for traveling</h1>
+        <section class="products">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Main</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="care_products.html">Care products</a></li>
+                <li class="breadcrumbs__current">Set for traveling</li>
+            </ul>
+        </section>
+        <section class="product-photos">
+            <h2 class="visually-hidden">Product photos</h2>
+            <p class="product-photos__full">
+                <img src="img/travelKitPhoto3.jpg" alt="current photo of a product" width="460" height="498">
+            </p>
+
+            <ul class="photo-set__list">
+                <li><img src="img/travelKitPhoto1.jpg" alt="full face photo" width="140" height="149"></li>
+                <li><img src="img/travelKitPhoto2.jpg" alt="photo in profile" width="140" height="149"></li>
+                <li><img src="img/travelKitPhoto3.jpg" alt="separate part photo" width="140" height="149"></li>
+            </ul>
+        </section>
+        <section class="product-description">
+            <h2 class="visually-hidden">Description of a product</h2>
+            <p class="product-description__availability">Available</p>
+            <p class="product-description__article">Article: dexter-ae</p>
+            <p class="product-description__text">Travel kit is a needful accessory of any travel. In this nice lather bag there are all you need for shaving and skin care duaring travel or rest: cleanser, moisturizing cream, cream for shaving, cream after shaving, shampoo, this kit may be
+                a good gift. </p>
+            <p>
+                <b>7 777$</b>
+                <a href="" class="button">Buy</a>
+            </p>
+            <h3>The kit includes:</h3>
+            <ul class="product-description__kit-list">
+                <li>Cleanser (50ml)</li>
+                <li>Moisturizing cream (50ml)</li>
+                <li>Cream for shaving (50ml)</li>
+                <li>Cream after shaving (50ml)</li>
+                <li>Shampoo (50ml)</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p class="addres-info main-footer__address">
+            Brabershop "Borodinskiy" </br>
+            Address: Lorem ipsum, dolor amet </br>
+            (077)777-77-77 </br>
+        </p>
+        <div class="social-icons">
+            <b>Let`s be friends</b>
+            <ul class="icon-list">
+                <li><a href class="social-button">Vk</a></li>
+                <li><a href class="social-button">Fb</a></li>
+                <li><a href class="social-button">Inst</a></li>
+            </ul>
+        </div>
+        <p class="copy-right">
+            <b>Created</b>
+            <a href class="developer-link">Lorem</a>
+        </p>
+    </footer>
+    <section class="modal-login">
+        <h2 class="modal-login__header">Private office</h2>
+        <p class="modal-login__message">Enter your login and password please </p>
+        <form method="post" class="login-form" action="https://echo.htmlacademy.ru">
+            <p class="modal-login__field"> <label class="visually-hidden" for="modal-login__login">Login</label> <input id="modal-login__login" name="field-login" placeholder="Login" type="text"></p>
+            <p class="modal-login__field"> <label class="visually-hidden" for="modal-login__password">Password</label> <input id="modal-login__password" name="field-password" placeholder="Password" type="password"></p>
+            <p class="modal-login__field">
+                <label for="remember-box">
+              <input class="visually-hidden" type="checkbox" checked id="remember-box" name="remember-me"> 
+              <span class="modal-login__indicator"></span> 
+            Remember me
+          </label>
+                <a href="">I forgot my password</a>
+            </p>
+            <button class="button" type="submit">Enter</button>
+        </form>
+        <button class="close-button" type="button">x</button>
+    </section>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
