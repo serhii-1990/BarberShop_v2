@@ -1,10 +1,497 @@
+$white: #ffffff;
+$black: #000000;
+$brown: #663d15;
+$gray: #aba9a7;
+$headerFocusedLinkColor: #242424;
+$indexColumnsColor: #fbf8f5;
+$galleryLayerColor: #e5e5e5;
+$mainFooterColor: #212121;
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $black;
+  background-image: url("../img/LayerBody.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+// product card page
+.product-card {
+  background-color: $indexColumnsColor;
+  background-image: url(../img/noiseLayer.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+//care product catalog
+.care_products {
+  background-color: $indexColumnsColor;
+  background-image: url(../img/noiseLayer.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  background-color: $black;
+  color: $white;
+  border: none;
+  line-height: 18px;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: $brown;
+}
+
+.main-header {
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+
+  margin-bottom: 75px;
+}
+
+.site-navigation__list,
+.site-navigation__login-list {
+  list-style-type: none;
+}
+
+.site-navigation__list a,
+.site-navigation__login-list a {
+  color: white;
+}
+
+.site-navigation__list a:hover,
+.site-navigation__list a:focus,
+.site-navigation__login-list a:hover,
+.site-navigation__login-list a:focus {
+  background-color: $headerFocusedLinkColor;
+}
+
+.advantages {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 80px;
+}
+
+.advantages h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.advantages-list {
+  list-style-type: none;
+}
+
+.advantages-list li {
+  text-align: center;
+}
+
+.index-columns {
+  color: $black;
+
+  background-color: $indexColumnsColor;
+  background-image: url(../img/noiseLayer.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+
+  padding: 50px 80px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+
+  margin: 0;
+}
+
+.news,
+.contact-info {
+  width: 380px;
+}
+
+.news a {
+  color: $white;
+}
+
+.news-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list time {
+  text-transform: none;
+}
+
+.photo-gallery,
+.make-appointment {
+  width: 300px;
+}
+
+.photo-gallery__slider {
+  background-color: $galleryLayerColor;
+  border: 7px solid $white;
+}
+
+.make-appointment__input {
+  font: inherit;
+
+  border: 2px solid $black;
+  background-color: transparent;
+}
+
+.make-appointment__input:hover,
+.make-appointment__input:focus {
+  border-color: $brown;
+}
+
+.main-footer {
+  color: $white;
+
+  background-color: $mainFooterColor;
+  background-image: url(../img/darkNoiseLayer.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+
+  padding: 65px 0;
+
+  // p {
+  //   margin: 0;
+  // }
+
+  .container {
+    display: flex;
   }
+}
+
+.addres-info {
+  width: 320px;
+}
+
+.main-footer__address {
+  margin: 0;
+  margin-right: 80px;
+}
+
+.addres-info .addres-info__link {
+  text-decoration: underline;
+  color: $white;
+}
+
+.addres-info .addres-info__link:hover,
+.addres-info .addres-info__link:focus {
+  text-decoration: none;
+}
+
+.social-icons {
+  text-align: center;
+  width: 145px;
+}
+
+.icon-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-button {
+  color: $white;
+}
+
+.main-footer .copy-right {
+  text-align: center;
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.copy-right .developer-link:hover,
+.copy-right .developer-link:focus {
+  color: $black;
+  background-color: $white;
+}
+
+.modal-login {
+  color: $black;
+
+  background-color: $indexColumnsColor;
+  background-image: url(../img/noiseLayer.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal-login .modal-login__header {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-login__message {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.modal-login__field input {
+  font: inherit;
+
+  border: 2px solid $black;
+  background-color: transparent;
+}
+
+.modal-login__field input:hover,
+.modal-login__field input:focus {
+  border-color: $brown;
+}
+
+.modal-login__checkbox:hover,
+.modal-login__checkbox:focus {
+  color: $brown;
+}
+
+.modal-login__forgot-password {
+  color: $black;
+  text-decoration: underline;
+}
+
+.modal-login__forgot-password:hover,
+.modal-login__forgot-password:focus {
+  text-decoration: none;
+}
+
+// product_card products-photos section
+.product-photos__full {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 1, 0.2);
+}
+.photo-set__list li {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 1, 0.2);
+}
+
+.product-header {
+  color: $black;
+
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs li {
+  list-style-type: none;
+  color: $gray;
+}
+
+.breadcrumbs li a {
+  color: $black;
+  font-weight: bold;
+}
+
+.breadcrumbs li a:hover,
+.breadcrumbs li a:focus {
+  text-decoration: underline;
+}
+
+.product-description {
+  color: $black;
+  font-weight: bold;
+}
+
+.prise b {
+  background-color: $gray;
+  text-align: center;
+}
+
+.product-description h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.product-description__article {
+  color: $gray;
+  text-align: right;
+}
+
+.product-description__kit-list {
+  list-style-type: none;
+}
+
+// Products care products
+
+.products-header {
+  font-size: 30px;
+  line-height: 42px;
+  color: $black;
+}
+
+.catalog__list li {
+  list-style-type: none;
+
+  background-color: $white;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 1, 0.2);
+}
+
+.catalog__list li:hover {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 1, 0.1);
+}
+
+.catalog__header {
+  color: $black;
+}
+
+.catalog__catrgory {
+  text-transform: none;
+}
+
+.catalog__list b {
+  background-color: $gray;
+  color: $black;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog__list-item {
+  list-style-type: none;
+  a {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.catalog__list-item a:hover,
+.catalog__list-item a:focus {
+  background-color: $brown;
+}
+
+.catalog__current-item {
+  list-style-type: none;
+  a {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.catalog__category {
+  text-transform: none;
+}
+
+.filters__producers ul li,
+.filters__products ul li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters__producers legend,
+.filters__products legend {
+  font-size: 24px;
+  line-height: 30px;
+  color: $black;
+}
+
+.input-filter:hover + label,
+.input-filter:focus + label {
+  color: $brown;
+}
+
+.input-filter:disabled + label {
+  color: $black;
+  opacity: 0.5;
+}
+
+// greed style
+
+.site-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-navigation__logo {
+  width: 371px;
+  height: 155px;
+
+  // display: block;
+  order: 2;
+}
+
+.site-navigation__list {
+  margin: 0;
+  padding: 0;
+
+  width: 620px;
+}
+
+.site-navigation__login-list {
+  margin: 0;
+  padding: 0;
+
+  width: 140px;
+}
+
+.main-header__wrapper {
+  background-color: $black;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.main-header__wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+// advantages section
+.advantages-list {
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  li {
+    width: 300px;
+  }
+  .advantages-list__header {
+    margin: 0;
+  }
+}

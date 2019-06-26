@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product card</title>
 
-    <link rel="stylesheet" href="css/productCard.css">
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="fonts/ptSansNarrow.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="product-card">
     <header class="main-header">
         <div class="main-header__wrapper">
             <nav class="site-navigation">
@@ -31,7 +33,7 @@
         </div>
     </header>
     <main class="container">
-        <h1 class="product-header">Set for traveling</h1>
+        <h1 class="product-header">Set for traveling «Baxter of California»</h1>
         <section class="products">
             <ul class="breadcrumbs">
                 <li><a href="index.html">Main</a></li>
@@ -58,7 +60,7 @@
             <p class="product-description__article">Article: dexter-ae</p>
             <p class="product-description__text">Travel kit is a needful accessory of any travel. In this nice lather bag there are all you need for shaving and skin care duaring travel or rest: cleanser, moisturizing cream, cream for shaving, cream after shaving, shampoo, this kit may be
                 a good gift. </p>
-            <p>
+            <p class="prise">
                 <b>7 777$</b>
                 <a href="" class="button">Buy</a>
             </p>
@@ -76,19 +78,20 @@
         <p class="addres-info main-footer__address">
             Brabershop "Borodinskiy" </br>
             Address: Lorem ipsum, dolor amet </br>
-            (077)777-77-77 </br>
+            <a class="addres-info__link" href>How found us?</a>
+            Phone: (077)777-77-77</br>
         </p>
         <div class="social-icons">
             <b>Let`s be friends</b>
             <ul class="icon-list">
-                <li><a href class="social-button">Vk</a></li>
-                <li><a href class="social-button">Fb</a></li>
-                <li><a href class="social-button">Inst</a></li>
+                <li><a href class="social-button">Twitter</a></li>
+                <li><a href class="social-button">Facebook</a></li>
+                <li><a href class="social-button">Instagram</a></li>
             </ul>
         </div>
         <p class="copy-right">
             <b>Created</b>
-            <a href class="developer-link">Lorem</a>
+            <a href class="button developer-link">Lorem</a>
         </p>
     </footer>
     <section class="modal-login">
@@ -98,15 +101,20 @@
             <p class="modal-login__field"> <label class="visually-hidden" for="modal-login__login">Login</label> <input id="modal-login__login" name="field-login" placeholder="Login" type="text"></p>
             <p class="modal-login__field"> <label class="visually-hidden" for="modal-login__password">Password</label> <input id="modal-login__password" name="field-password" placeholder="Password" type="password"></p>
             <p class="modal-login__field">
-                <label for="remember-box">
-              <input class="visually-hidden" type="checkbox" checked id="remember-box" name="remember-me"> 
-              <span class="modal-login__indicator"></span> 
-            Remember me
-          </label>
-                <a href="">I forgot my password</a>
+                <label for="remember-box" class="modal-login__checkbox">
+                <input type="checkbox" checked id="remember-box" name="remember-me"> 
+                <span class="modal-login__indicator"></span> 
+              Remember me
+            </label>
+                <a class="modal-login__forgot-password" href="">I forgot my password</a>
             </p>
             <button class="button" type="submit">Enter</button>
         </form>
+        <button class="close-button" type="button">x</button>
+    </section>
+    <section class="map">
+        <h2>How to get</h2>
+        <img src="img/map.png" alt="Address: Lorem ipsum, dolor amet">
         <button class="close-button" type="button">x</button>
     </section>
     <script src="js/libs.min.js"></script>

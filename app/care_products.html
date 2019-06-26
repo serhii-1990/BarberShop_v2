@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Catalog Barbershop Borodinskiy</title>
 
-    <link rel="stylesheet" href="css/care_products.css" />
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="fonts/ptSansNarrow.css">
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
-<body>
+<body class="care_products">
     <header class="main-header">
         <div class="main-header__wrapper">
             <nav class="site-navigation">
@@ -48,37 +50,57 @@
             <form method="POST" action="https://echo.htmlacademy.ru" class="filters-forms">
                 <fieldset class="filters__producers">
                     <legend>Producers:</legend>
-                    <ul>
-                        <li class="filters__producer-item">
-                            <label for="filter-baxter-california">Baxter of California</label
-                >
-                <input
-                  type="checkbox"
-                  class="visually-hidden"
-                  id="filter-baxter-california"
-                  name="baxter-california"
-                  checked
-                />
-              </li>
-              <li class="filters__producer-item">
-                <label for="filter-mr-natty">Mr Natty</label>
-                            <input type="checkbox" class="visually-hidden" id="filter-mr-natty" name="mr-natty" />
+                <ul>
+                    <li class="filters__producer-item">
+                        <input
+                            type="checkbox"
+                            class="visually-hidden input-filter"
+                            id="filter-baxter-california"
+                            name="baxter-california"
+                            checked />
+                            <label for="filter-baxter-california">Baxter of California</label>
+                    </li>
+                    <li class="filters__producer-item">
+                        <input 
+                            type="checkbox" 
+                            class="visually-hidden input-filter" 
+                            id="filter-mr-natty" 
+                            name="mr-natty"/>
+                            <label for="filter-mr-natty">Mr Natty</label>
                         </li>
                         <li class="filters__producer-item">
+                            <input 
+                                type="checkbox" 
+                                class="visually-hidden input-filter" 
+                                id="filter-suavecito"
+                                name="suavecito" />
                             <label for="filter-suavecito">Suavecito</label>
-                            <input type="checkbox" class="visually-hidden" id="filter-suavecito" name="suavecito" />
                         </li>
                         <li class="filters__producer-item">
+                            <input 
+                                type="checkbox" 
+                                class="visually-hidden input-filter" 
+                                id="filter-malin-goetz" 
+                                name="malin-goetz" 
+                                checked />
                             <label for="filter-malin-goetz">Malin-Goetz</label>
-                            <input type="checkbox" class="visually-hidden" id="filter-malin-goetz" name="malin-goetz" checked />
                         </li>
                         <li class="filters__producer-item">
+                            <input 
+                                type="checkbox" 
+                                class="visually-hidden input-filter" 
+                                id="filter-murrays" 
+                                name="murrays" />
                             <label for="filter-murrays">Murrays</label>
-                            <input type="checkbox" class="visually-hidden" id="filter-murrays" name="murrays" />
                         </li>
                         <li class="filters__producer-item">
+                            <input 
+                                type="checkbox" 
+                                class="visually-hidden input-filter" 
+                                id="filter-american-crew" 
+                                name="american-crew" 
+                                checked />
                             <label for="filter-american-crew">American Crew</label>
-                            <input type="checkbox" class="visually-hidden" id="filter-american-crew" name="american-crew" checked />
                         </li>
                     </ul>
                 </fieldset>
@@ -86,28 +108,35 @@
                     <legend>Products groups:</legend>
                     <ul>
                         <li>
-                            <label for="filter__shaving-accessores">Shaving accessores</label
-                >
-                <input
-                  type="radio"
-                  id="filter__shaving-accessores"
-                  class="filter__product-item"
-                  name="product-group"
-                  value="shaving-accessores"
-                />
-              </li>
-
-              <li>
-                <label for="filter__care-products">Care products</label>
-                            <input type="radio" id="filter__care-products" class="filter__product-item" name="product-group" value="care-products" checked />
+                            <input
+                                type="radio"
+                                id="filter__shaving-accessores"
+                                class="filter__product-item"
+                                name="product-group"
+                                value="shaving-accessores"/>
+                            <label for="filter__shaving-accessores">Shaving accessores</label>
+                        </li>
+                        <li>
+                            <input 
+                                type="radio" 
+                                id="filter__care-products" 
+                                class="filter__product-item" 
+                                name="product-group" 
+                                value="care-products" checked />
+                            <label for="filter__care-products">Care products</label>
                         </li>
 
                         <li>
+                            <input 
+                                type="radio" 
+                                id="filter__accessores" 
+                                class="filter__product-item" 
+                                name="product-group" 
+                                value="accessores" />
                             <label for="filter__accessores">Accessores</label>
-                            <input type="radio" id="filter__accessores" class="filter__product-item" name="product-group" value="accessores" />
                         </li>
                     </ul>
-                    <button type="submit">Show</button>
+                    <button class="button" type="submit">Show</button>
                 </fieldset>
             </form>
         </section>
@@ -206,49 +235,57 @@
                 </li>
             </ul>
             <ul class="catalog__pagination-list">
-                <li><a href>1</a></li>
-                <li><a class="catalog__current-page">2</a></li>
-                <li><a href>3</a></li>
-                <li><a href>4</a></li>
+                <li class="catalog__list-item"><a href>1</a></li>
+                <li class=" catalog__current-item"><a href >2</a></li>
+                <li class="catalog__list-item"><a href>3</a></li>
+                <li class="catalog__list-item"><a href>4</a></li>
             </ul>
         </section>
     </main>
     <footer class="main-footer">
         <p class="addres-info main-footer__address">
-            Brabershop "Borodinskiy" <br> 
-            Address: Lorem ipsum, dolor amet <br> 
-            (077)777-77-77 <br>
+            Brabershop "Borodinskiy" </br>
+            Address: Lorem ipsum, dolor amet </br>
+            <a class="addres-info__link" href>How found us?</a>
+            Phone: (077)777-77-77</br>
         </p>
         <div class="social-icons">
             <b>Let`s be friends</b>
             <ul class="icon-list">
-                <li><a href class="social-button">Vk</a></li>
-                <li><a href class="social-button">Fb</a></li>
-                <li><a href class="social-button">Inst</a></li>
+                <li><a href class="social-button">Twitter</a></li>
+                <li><a href class="social-button">Facebook</a></li>
+                <li><a href class="social-button">Instagram</a></li>
             </ul>
         </div>
         <p class="copy-right">
             <b>Created</b>
-            <a href class="developer-link">Lorem</a>
+            <a href class="button developer-link">Lorem</a>
         </p>
     </footer>
+
     <section class="modal-login">
         <h2 class="modal-login__header">Private office</h2>
-        <p class="modal-login__message">Enter your login and password please</p>
+        <p class="modal-login__message">Enter your login and password please </p>
         <form method="post" class="login-form" action="https://echo.htmlacademy.ru">
-          <p class="modal-login__field"> <label class="visually-hidden" for="modal-login__login">Login</label> <input id="modal-login__login" name="field-login" placeholder="Login" type="text"></p>
-          <p class="modal-login__field"> <label class="visually-hidden" for="modal-login__password">Password</label> <input id="modal-login__password" name="field-password" placeholder="Password" type="password"></p>
-          <p class="modal-login__field">
-              <label for="remember-box">
-              <input class="visually-hidden" type="checkbox" checked id="remember-box" name="remember-me"> 
-              <span class="modal-login__indicator"></span> 
-            Remember me
-          </label>
-              <a href="">I forgot my password</a>
-          </p>
-          <button class="button" type="submit">Enter</button>
-      </form>
-      <button class="close-button" type="button">x</button>
+            <p class="modal-login__field"> <label class="visually-hidden" for="modal-login__login">Login</label> <input id="modal-login__login" name="field-login" placeholder="Login" type="text"></p>
+            <p class="modal-login__field"> <label class="visually-hidden" for="modal-login__password">Password</label> <input id="modal-login__password" name="field-password" placeholder="Password" type="password"></p>
+            <p class="modal-login__field">
+                <label for="remember-box" class="modal-login__checkbox">
+                <input type="checkbox" checked id="remember-box" name="remember-me"> 
+                <span class="modal-login__indicator"></span> 
+              Remember me
+            </label>
+                <a class="modal-login__forgot-password" href="">I forgot my password</a>
+            </p>
+            <button class="button" type="submit">Enter</button>
+        </form>
+        <button class="close-button" type="button">x</button>
+    </section>
+
+    <section class="map">
+        <h2>How to get</h2>
+        <img src="img/map.png" alt="Address: Lorem ipsum, dolor amet">
+        <button class="close-button" type="button">x</button>
     </section>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
