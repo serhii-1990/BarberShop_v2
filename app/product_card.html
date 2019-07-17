@@ -15,21 +15,26 @@
 <body class="product-card">
     <header class="main-header">
         <div class="main-header__wrapper">
-            <nav class="site-navigation">
-                <a><img src="img/logo.svg" width="111" height="24" alt="Logotype barber shop" /></a>
-                <ul class="site-navigation__list">
-                    <li><a href>Information</a></li>
-                    <li><a href>News</a></li>
-                    <li><a href>Prise-list</a></li>
-                    <li><a href class="site-navigation__current">Shop</a></li>
-                    <li><a href>Contacts</a></li>
-                </ul>
-                <ul class="site-navigation__login-list">
-                    <li>
-                        <a href="/">Log-in<img src="img/loginIcon.svg" alt="" class="login-icon"/></a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="container">
+                <nav class="site-navigation line-nav">
+                    <a class="site-navigation__mini-logo"><img src="img/logo.svg" width="111" height="24" alt="Logotype barber shop" /></a>
+                        <ul class="site-navigation__list">
+                            <li><a href>Information</a></li>
+                            <li><a href>News</a></li>
+                            <li><a href>Prise-list</a></li>
+                            <li><a href class="site-navigation__current">Shop</a></li>
+                            <li><a href>Contacts</a></li>
+                        </ul>
+                        <ul class="site-navigation__login-list">
+                            <li>
+                                <a href="/">Log-in<img
+                            src="img/loginIcon.svg"
+                            alt="login icon"
+                            class="login-icon"/></a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="container">
@@ -42,57 +47,61 @@
                 <li class="breadcrumbs__current">Set for traveling</li>
             </ul>
         </section>
-        <section class="product-photos">
-            <h2 class="visually-hidden">Product photos</h2>
-            <p class="product-photos__full">
-                <img src="img/travelKitPhoto3.jpg" alt="current photo of a product" width="460" height="498">
-            </p>
-
-            <ul class="photo-set__list">
-                <li><img src="img/travelKitPhoto1.jpg" alt="full face photo" width="140" height="149"></li>
-                <li><img src="img/travelKitPhoto2.jpg" alt="photo in profile" width="140" height="149"></li>
-                <li><img src="img/travelKitPhoto3.jpg" alt="separate part photo" width="140" height="149"></li>
-            </ul>
-        </section>
-        <section class="product-description">
-            <h2 class="visually-hidden">Description of a product</h2>
-            <p class="product-description__availability">Available</p>
-            <p class="product-description__article">Article: dexter-ae</p>
-            <p class="product-description__text">Travel kit is a needful accessory of any travel. In this nice lather bag there are all you need for shaving and skin care duaring travel or rest: cleanser, moisturizing cream, cream for shaving, cream after shaving, shampoo, this kit may be
-                a good gift. </p>
-            <p class="prise">
-                <b>7 777$</b>
-                <a href="" class="button">Buy</a>
-            </p>
-            <h3>The kit includes:</h3>
-            <ul class="product-description__kit-list">
-                <li>Cleanser (50ml)</li>
-                <li>Moisturizing cream (50ml)</li>
-                <li>Cream for shaving (50ml)</li>
-                <li>Cream after shaving (50ml)</li>
-                <li>Shampoo (50ml)</li>
-            </ul>
-        </section>
+        <div class="card-wrapper">
+            <section class="product-photos">
+                <h2 class="visually-hidden">Product photos</h2>
+                <p class="product-photos__full">
+                    <img src="img/travelKitPhoto3_big.jpg" alt="current photo of a product" width="460" height="498">
+                </p>
+    
+                <ul class="photo-set__list">
+                    <li><img src="img/travelKitPhoto1.jpg" alt="full face photo" width="140" height="149"></li>
+                    <li><img src="img/travelKitPhoto2.jpg" alt="photo in profile" width="140" height="149"></li>
+                    <li><img src="img/travelKitPhoto3.jpg" alt="separate part photo" width="140" height="149"></li>
+                </ul>
+            </section>
+            <section class="product-description">
+                <h2 class="visually-hidden">Description of a product</h2>
+                <p class="product-description__availability">Available</p>
+                <p class="product-description__article">Article: dexter-ae</p>
+                <p class="product-description__text">Travel kit is a needful accessory of any travel. In this nice lather bag there are all you need for shaving and skin care duaring travel or rest: cleanser, moisturizing cream, cream for shaving, cream after shaving, shampoo, this kit may be
+                    a good gift. </p>
+                <p class="prise">
+                    <b>7 777$</b>
+                    <a href="" class="button">Buy</a>
+                </p>
+                <h3>The kit includes:</h3>
+                <ul class="product-description__kit-list">
+                    <li>Cleanser (50ml)</li>
+                    <li>Moisturizing cream (50ml)</li>
+                    <li>Cream for shaving (50ml)</li>
+                    <li>Cream after shaving (50ml)</li>
+                    <li>Shampoo (50ml)</li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer class="main-footer">
-        <p class="addres-info main-footer__address">
-            Brabershop "Borodinskiy" </br>
-            Address: Lorem ipsum, dolor amet </br>
-            <a class="addres-info__link" href>How found us?</a>
-            Phone: (077)777-77-77</br>
-        </p>
-        <div class="social-icons">
-            <b>Let`s be friends</b>
-            <ul class="icon-list">
-                <li><a href class="social-button">Twitter</a></li>
-                <li><a href class="social-button">Facebook</a></li>
-                <li><a href class="social-button">Instagram</a></li>
-            </ul>
+        <div class="container">
+            <p class="addres-info main-footer__address">
+                Brabershop "Borodinskiy" </br>
+                Address: Lorem ipsum, dolor amet </br>
+                <a class="addres-info__link" href>How found us?</a>
+                Phone: (077)777-77-77</br>
+            </p>
+            <div class="social-icons">
+                <b>Let`s be friends</b>
+                <ul class="icon-list">
+                    <li><a href class="social-button">Twitter</a></li>
+                    <li><a href class="social-button">Facebook</a></li>
+                    <li><a href class="social-button">Instagram</a></li>
+                </ul>
+            </div>
+            <p class="copy-right">
+                <b>Created</b>
+                <a href class="button developer-link">Lorem</a>
+            </p>
         </div>
-        <p class="copy-right">
-            <b>Created</b>
-            <a href class="button developer-link">Lorem</a>
-        </p>
     </footer>
     <section class="modal-login">
         <h2 class="modal-login__header">Private office</h2>
