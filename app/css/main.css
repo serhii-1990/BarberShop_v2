@@ -520,6 +520,10 @@ a {
   margin: 0;
   padding: 0;
   max-width: 140px; }
+
+  .site-navigation__login-list li:last-child {
+    display: none; }
+
   .site-navigation__login-list a {
     padding: 25px 20px;
     padding-left: 50px;
@@ -589,3 +593,20 @@ a {
   margin: 0;
   padding: 0;
   width: 300px; }
+
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 700px; }
+  .site-navigation__logo {
+    width: 278px;
+    height: 116px;
+    order: 1;
+    margin: 0 auto; }
+  .main-header__wrapper {
+    order: 2; }
+  .site-navigation__login-list li:first-child {
+    display: none; }
+  .site-navigation__login-list li:last-child {
+    display: block; } 
+}

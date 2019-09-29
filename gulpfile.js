@@ -41,7 +41,7 @@ gulp.task("browser-sync", function() {
   browserSync({
     server: {
       baseDir: "app",
-      index: "product_card.html" // here write file that need reload
+      index: "index.html" // here write file that need reload
     },
     notify: "false"
   });
