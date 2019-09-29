@@ -520,8 +520,10 @@ a {
   margin: 0;
   padding: 0;
   max-width: 140px; }
+
   .site-navigation__login-list li:last-child {
     display: none; }
+
   .site-navigation__login-list a {
     padding: 25px 20px;
     padding-left: 50px;
@@ -592,6 +594,7 @@ a {
   padding: 0;
   width: 300px; }
 
+
 @media only screen and (max-width: 960px) {
   .container {
     width: 700px; }
@@ -605,4 +608,5 @@ a {
   .site-navigation__login-list li:first-child {
     display: none; }
   .site-navigation__login-list li:last-child {
-    display: block; } }
+    display: block; } 
+}
